@@ -15,17 +15,11 @@ class School
     @roster[cle]
   end 
   
-  def sort_student(a)
-    grade(a).sort
-  end 
-  
-  def sort 
+ def sort 
     sorted = {}
     @roster.each do |key,val|
       sorted[key] = val.sort
-      
     end 
     sorted
-   #Hash[@roster.collect{|a| [a.first,sort_student(a.first)]}]
   end
 end 
